@@ -116,12 +116,12 @@ height: 117px;
 }
 
 /* responsive mobile  */
-@media(max-width:688px) {
+@media only screen and (max-width:688px) {
     .container-title{
         text-align: center;
     }
     .container{
-       max-width: 100%;
+       width: 100%;
     }
     .players, .blogs, .courses{
         display: grid;
@@ -134,4 +134,14 @@ height: 117px;
         flex-direction: column;
     }
     
+}
+/* responsive tablet */
+@media only screen and (min-width:689px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2,1fr);
+
+    }
 }
