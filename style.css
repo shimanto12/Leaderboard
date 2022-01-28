@@ -121,7 +121,7 @@ height: 117px;
         text-align: center;
     }
     .container{
-        width: 100%;
+       max-width: 100%;
     }
     .players, .blogs, .courses{
         display: grid;
