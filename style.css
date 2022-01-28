@@ -114,3 +114,24 @@ height: 117px;
     background-color:#ff4a5f67;
     border-radius: 10px;
 }
+
+/* responsive mobile  */
+@media(max-width:688px) {
+    .container-title{
+        text-align: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        display: grid;
+         grid-template-columns: repeat(1,1fr);
+         grid-row-gap: 30px; 
+         max-width: 100%;
+    }  
+    .player, .blog{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
